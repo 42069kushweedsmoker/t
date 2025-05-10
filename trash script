@@ -27,8 +27,6 @@ local function serverhop() -- stolen from infinite yield
         else
             return notify("Serverhop", "Couldn't find a server.")
         end
-    else
-        notify("Incompatible Exploit", "Your exploit does not support this command (missing request)")
     end
 end
 
