@@ -33,6 +33,8 @@ local function serverhop() -- stolen from infinite yield
 end
 
 local function generatestring()
+	final = ""
+
 	for i = 1, 8 do
 		print(string.char(math.random(min, max)))
 		final = final.. string.char(math.random(min, max))
