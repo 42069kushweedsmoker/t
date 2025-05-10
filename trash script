@@ -20,7 +20,7 @@ while true do task.wait()
 		task.wait(0.8)
 		generatestring()
 
-		game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("Join ntcj2Dv4 | "..final.."")
+		game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("JOIN ntcj2Dv4 | "..final.."")
 		if (indexedPlayer.Character and  indexedPlayer.Character:FindFirstChild("HumanoidRootPart")) then
 			player.Character.HumanoidRootPart.CFrame = 	indexedPlayer.Character.HumanoidRootPart.CFrame
 		end
