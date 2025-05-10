@@ -1,4 +1,4 @@
-queue_on_teleport("loadstring(game:HttpGet(https://raw.githubusercontent.com/42069kushweedsmoker/t/refs/heads/main/trash%20script'))()")
+queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/42069kushweedsmoker/t/refs/heads/main/trash%20script'))()")
 
 local player = game.Players.LocalPlayer
 local min, max, final = ("a"):byte(), ("z"):byte(), ""
