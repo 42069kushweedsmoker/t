@@ -26,5 +26,7 @@ while true do task.wait()
 		end
 	end
 
-		game:GetService("TeleportService"):Teleport(1068523756, game.Players.LocalPlayer)
+	while true do task.wait()
+	game:GetService("TeleportService"):Teleport(1068523756, game.Players.LocalPlayer)
+	end
 end
