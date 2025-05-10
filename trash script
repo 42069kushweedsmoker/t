@@ -5,7 +5,7 @@ local min, max, final = ("a"):byte(), ("z"):byte(), ""
 
 
 local function generatestring()
-	for i = 1, 15 do
+	for i = 1, 8 do
 		print(string.char(math.random(min, max)))
 		final = final.. string.char(math.random(min, max))
 	end
